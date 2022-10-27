@@ -1,0 +1,19 @@
+div{
+    text-align: center;
+}
+label{
+    text-align: left;
+}
+.alert-danger{
+    background-color: red;
+}
+.alert{
+    color: white;
+    inline-size: 150px;
+    margin-bottom: 15px;
+    text-align: center;
+    margin-left: 35em;
+}
+.btn-primary{
+    background-color:cornflowerblue;
+}
