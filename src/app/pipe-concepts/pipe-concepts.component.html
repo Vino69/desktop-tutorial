@@ -1,0 +1,28 @@
+<h1>Pipes concepts</h1>
+
+<h2>Pipes for Date</h2>
+<p>normal</p>
+<div>{{ today }}</div>
+
+<p>Ng pipe method</p>
+<div>{{ today | date }}</div>
+
+<p>Format type pipe</p>
+<div>{{ today | date : 'dd-MMM-yyyy' }}</div>
+
+<h2>Pipe for Number</h2>
+<div>{{number}}</div>
+<div >'sufix Max 3 Val' {{number | number}}</div>
+<div >'5.before val and sufix 2' {{number | number: '5.1-2'}}</div>
+
+<h2>Pipes for Uppercase&Lowecase</h2>
+<div>{{Name}}</div>
+
+<div>{{Name | lowercase }}</div>
+
+<div>{{Name | uppercase}}</div>
+
+<h2>Pipe for Rupees and currency,dollar</h2>
+<div>{{rupee }}</div>
+<div>"Rupee",{{rupee | currency : 'INR': 'code' }}</div>
+<div>"Dollar",{{rupee | currency }}</div>

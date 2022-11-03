@@ -5,12 +5,16 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MyLibModule } from 'dist/my-lib';
 import { ComponentComponent } from './component/component.component';
+import { PipeConceptsComponent } from './pipe-concepts/pipe-concepts.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
    
-    ComponentComponent
+    ComponentComponent,
+        PipeConceptsComponent,
+        
   ],
   imports: [
     BrowserModule,
