@@ -26,3 +26,14 @@
 <div>{{rupee }}</div>
 <div>"Rupee",{{rupee | currency : 'INR': 'code' }}</div>
 <div>"Dollar",{{rupee | currency }}</div>
+
+
+<h2>NgFor</h2>
+<p>Using dropdown and databind</p>
+<div style="margin-left: 15em;">
+    <select >
+        <option *ngFor="let emp of Employee" value="Name.Id">{{emp.Name}}</option>
+    </select>
+    <br>
+     
+</div>
