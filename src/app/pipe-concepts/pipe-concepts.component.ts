@@ -26,6 +26,33 @@ export class PipeConceptsComponent implements OnInit {
     {Id:4, Name:"Vivo"},
   ];
   
-
+ 
   
 }
+
+
+class demo {
+
+  ram= "Success";
+  seeta= "JoyLife";
+}
+
+const pt = new demo();
+console.log(`${pt.ram}, ${pt.seeta}`);
+console.log(pt.ram,pt.seeta);
+
+class Gudways{
+  ram : string;
+  seeta: string;
+
+  constructor(){
+    this.ram = "Bold",
+    this.seeta = "love"
+  }
+}
+
+const gg = new Gudways();
+console.log(gg.ram, gg.seeta);
+
+
+
