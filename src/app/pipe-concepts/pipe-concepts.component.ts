@@ -54,5 +54,17 @@ class Gudways{
 const gg = new Gudways();
 console.log(gg.ram, gg.seeta);
 
+//Methods
+
+class func{
+  x=11;
+  y=12;
+
+  scale(n:number): void{
+    console.log(this.x *=n);
+    console.log(this.y *=n);
+  }
+}
+
 
 
