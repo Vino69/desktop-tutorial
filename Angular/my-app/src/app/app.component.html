@@ -4,3 +4,11 @@
 <div>
     <span matBadge="5" >Notifications</span>
 </div>
+
+<mat-sidenav-container>
+    <mat-sidenav #sidenav mode="over" [(opened)]="opened">Sidenav</mat-sidenav>
+    <mat-sidenav-content>MainContent
+        <button (click)="opened =!opened">Toggle Opened</button>
+        <button (click)="sidenav.toggle()">Toggle</button>
+    </mat-sidenav-content>
+</mat-sidenav-container>
