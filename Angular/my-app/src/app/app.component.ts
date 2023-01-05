@@ -11,12 +11,13 @@ import { DialogExComponent } from './dialog-ex/dialog-ex.component';
 export class AppComponent {
   title = 'my-app';
   opened= false; 
+  log(state: any){
+    console.log(state)
+  }
   constructor(public matdiaglog: MatDialog){}
 
   Openpop(){
     this.matdiaglog.open(DialogExComponent);
-
-  
-
   }
+  
 }
