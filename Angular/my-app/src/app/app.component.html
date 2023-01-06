@@ -1,9 +1,14 @@
-<button (click)="Openpop()" mat-raised-button color="primary">Open</button>
-
-
 <div>
+    <button mat-flat-button [matMenuTriggerFor]="appMenu">Menu</button>
+    &nbsp;&nbsp;
+    <button mat-raised-button [matMenuTriggerData]="{name: 'Jack', hobby: 'Football'}" [matMenuTriggerFor]="liteMenu">Joy</button>
+<button mat-raised-button [matMenuTriggerData]="{name: 'Programmer',hobby: 'Developer'}" [matMenuTriggerFor]="liteMenu">Developer</button>
+    <button (click)="Openpop()" mat-raised-button color="primary">Open</button>
+    <br>&nbsp; &napprox;
     <span matBadge="5" >Notifications</span>
+    
 </div>
+
 
 <mat-sidenav-container>
     <mat-sidenav #sidenav mode="over" [(opened)]="opened">Sidenav
@@ -26,4 +31,22 @@
 
     </mat-sidenav-content>
 </mat-sidenav-container>
+
+<mat-menu #appMenu="matMenu">
+    <button mat-menu-item [matMenuTriggerFor]="subMenu">FrontEnd</button>
+    <button mat-menu-item>BackEnd</button>
+</mat-menu>
+
+<mat-menu #subMenu="matMenu">
+    <button mat-menu-item>Angular</button>
+    <button mat-menu-item>React</button>
+    <button mat-menu-item>Nodejs</button>
+</mat-menu>
+<mat-menu #liteMenu="matMenu">
+    <ng-template matMenuContent let-name="name" let-hobby="hobby">
+    <button mat-menu-item>Settings</button>
+    <button mat-menu-item>Hobby is {{hobby}}</button>
+    <button mat-menu-item>Logout {{name}}</button>
+</ng-template>
+</mat-menu>
 
