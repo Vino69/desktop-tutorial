@@ -22,6 +22,17 @@
         <button (click)="opened =!opened">Toggle Opened</button>
         <button (click)="sidenav.toggle()">Toggle</button>
         
+        <!-- Mat Stepper -->
+<mat-horizontal-stepper>
+    <mat-step label="Shipping Address">Shipping Address</mat-step>
+    <mat-step label="Billing Address">Billing Address
+        <div>
+            <button mat-button matStepperPrevious>Back</button>&nbsp;
+            <button mat-button matStepperNext>Next</button>
+        </div>
+    </mat-step>
+    <mat-step label="Place Order">Order Details</mat-step>
+</mat-horizontal-stepper>
         <!-- mat list  -->
 <mat-nav-list>
     <a mat-list-item href="#">Home</a>
